@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Понеслись формы</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+    <p>Имя</p>
+    <input type="text" name="name"/>
+    <p>Пароль</p>
+    <input type="password" name="password"/>
+    <p>Телефон</p>
+    <input type="tel" name="telephone"/>
+    <p>Пол</p>
+    <div><input checked type="radio" name="gender" value="male"> Мужской </div>
+    <div><input type="radio" name="gender" value="female"> Женский </div>
+    <p>Имущество</p>
+    <div><input checked type="checkbox" name=property"> Велик</div>
+    <div><input type="checkbox" name=property"> Машина</div>
+    <div><input disabled type="checkbox" name=property"> Квартира</div>
+    <p> Дополнительная информация</p>
+    <textarea name="info"></textarea>
+    <p>Прикрепить фото</p>
+    <input type="file">
+    <p> Любимый цвет</p>
+    <select>
+        <option selected>Красный</option>
+        <option>Розовый</option>
+        <option>Голубой</option>
+    </select>
+    <p>Действия</p>
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+</form>
+</body>
+</html>
