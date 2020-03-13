@@ -1,0 +1,46 @@
+//Обнуляющие стиили
+@import "nullstyle";
+//Hello
+$fz: 10px;
+
+%tplborder {
+  border-bottom: 5px dashed red;
+}
+
+@mixin fontz($g){
+    font-size: $g;
+}
+
+.block {
+    width: 300px / 960px *100%;
+    background-color: dimgrey;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: $fz;
+
+  .block__text {
+    font-size: $fz;
+
+    span {
+      color: green
+    }
+  }
+
+  &.block--big {
+    font-size: $fz;
+  }
+}
+
+.link {
+  color: blue;
+
+  &:hover {
+    color: yellow
+  }
+  @extend %tplborder;
+}
+
+.link2 {
+    @include fontz(100px);
+    @extend %tplborder;
+}
