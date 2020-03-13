@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list{
+    margin : 30px 30px;
+    list-style: none;
+}
+
+.list li:before{
+    list-style: none;
+    content: '✓';
+}
+
+.list li:first-child{
+    text-decoration:line-through;
+}
+.list li:nth-child(2){
+    font-weight: bold;
+}
+.list li:nth-child(2):hover{
+    color: red;
+    background-size:15px 15px ;
+}
+.list li:nth-child(3){
+    font-style: italic;
+}
+.list li:nth-child(4){
+    text-transform: uppercase;
+}
+
+button {
+
+    margin-top: 20px;
+    width: 199px;
+    height: 44px;
+    box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+    background: #80b7b3;
+    border-radius: 20px;
+    margin-left: 34px;
+    margin-bottom: 20px;
+}
+.text:after{
+    content:'➜';
+}
+
+.text{
+    color: white;
+}
+button:hover{
+    background: darkslategrey;
+}
+
+button:active{
+    background: dimgrey;
+}
+.text_input{
+    border: 1px solid gray;
+    width: 200px;
+    height: 50px;
+}
+.text_input:focus{
+    box-shadow: 0 0 4px;
+    color: aqua;
+}
+.redtext::first-line{
+    color: red;
+}
+.redtext{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.symbolsRed::first-letter{
+    color: red;
+}
+.symbolsRed{
+    margin-left: 30px;
+}
